@@ -1,7 +1,7 @@
 const {createCipheriv, createDecipheriv, createHmac, scrypt} = require('crypto')
 
 const {AbstractLevelDOWN} = require('abstract-leveldown')
-const map = require('async/map')
+const map = require('async-each')
 const merge = require('lodash.merge')
 
 

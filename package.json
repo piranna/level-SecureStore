@@ -23,7 +23,7 @@
   "homepage": "https://github.com/piranna/level-SecureStore#readme",
   "dependencies": {
     "abstract-leveldown": "piranna/abstract-leveldown",
-    "async": "^3.1.0",
+    "async-each": "^1.0.3",
     "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
