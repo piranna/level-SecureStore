@@ -1,0 +1,35 @@
+{
+  "name": "level-securestore",
+  "version": "0.0.0",
+  "description": "Cryptographically secure storage for LevelDB",
+  "main": "lib",
+  "scripts": {
+    "test": "nyc tape test.js | tap-nyc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piranna/level-SecureStore.git"
+  },
+  "keywords": [
+    "level",
+    "crypto",
+    "hash"
+  ],
+  "author": "Jesús Leganés-Combarro 'piranna' <piranna@gmail.com>",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/piranna/level-SecureStore/issues"
+  },
+  "homepage": "https://github.com/piranna/level-SecureStore#readme",
+  "dependencies": {
+    "abstract-leveldown": "piranna/abstract-leveldown",
+    "async": "^3.1.0",
+    "lodash.merge": "^4.6.2"
+  },
+  "devDependencies": {
+    "memdown": "^4.1.0",
+    "nyc": "^14.1.1",
+    "tap-nyc": "^1.0.3",
+    "tape": "^4.11.0"
+  }
+}
