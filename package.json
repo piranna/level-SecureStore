@@ -1,6 +1,6 @@
 {
   "name": "level-securestore",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Cryptographically secure storage for LevelDB",
   "main": "lib",
   "scripts": {
