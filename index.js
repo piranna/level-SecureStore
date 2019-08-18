@@ -7,15 +7,19 @@ const merge = require('lodash.merge')
 
 function calcCipherKey(key, valueHmac, valueScrypt, callback)
 {
-  const password = calcHmac(key, valueHmac)
+  const {preffix} = valueHmac
+  const data = preffix != null ? Buffer.concat([preffix, key]) : key
+
+  const password = calcHmac(data, valueHmac)
 
   scrypt(password, valueScrypt.salt, valueScrypt.keylen, valueScrypt.options,
     callback)
 }
 
-function calcDbKey(key, keyHmac, suffix)
+function calcDbKey(key, keyHmac)
 {
-  const data = suffix ? Buffer.concat([key, suffix]) : key
+  const {suffix} = keyHmac
+  const data = suffix != null ? Buffer.concat([key, suffix]) : key
 
   return calcHmac(data, keyHmac)
 }
@@ -75,7 +79,7 @@ module.exports = class SecureStore extends AbstractLevelDOWN
       } = merge({}, options, batchOptions)
 
       // Calc hashed key
-      const dbKey = calcDbKey(key, keyHmac, suffix)
+      const dbKey = calcDbKey(key, keyHmac)
 
       if(type !== 'put')
         return callback(null, {...operation, key: dbKey, options, type, value})
@@ -111,13 +115,12 @@ module.exports = class SecureStore extends AbstractLevelDOWN
     const {
       cipher,
       keyHmac,
-      suffix,
       valueHmac,
       valueScrypt
     } = merge({}, options, this.#options)
 
     // Calc hashed key
-    const dbKey = calcDbKey(key, keyHmac, suffix)
+    const dbKey = calcDbKey(key, keyHmac)
 
     // Get ciphered value
     this.#db.get(dbKey, function(error, encrypted)
@@ -159,7 +162,6 @@ module.exports = class SecureStore extends AbstractLevelDOWN
     const {
       cipher,
       keyHmac,
-      suffix,
       valueHmac,
       valueScrypt
     } = merge({}, options, this.#options)
@@ -170,7 +172,7 @@ module.exports = class SecureStore extends AbstractLevelDOWN
       if(error) return callback(error)
 
       // Store ciphered value
-      const dbKey = calcDbKey(key, keyHmac, suffix)
+      const dbKey = calcDbKey(key, keyHmac)
 
       this.#db.put(dbKey, value, callback)
     })
