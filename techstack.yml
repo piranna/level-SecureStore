@@ -2,11 +2,11 @@ repo_name: piranna/level-SecureStore
 report_id: 23374a7ed23a1d032b3abbb9c593923d
 version: 0.1
 repo_type: Public
-timestamp: '2023-12-27T06:16:00+00:00'
+timestamp: '2024-01-05T08:14:50+00:00'
 requested_by: piranna
 provider: github
 branch: master
-detected_tools_count: 7
+detected_tools_count: 8
 tools:
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -17,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/piranna/level-SecureStore
   detection_source: Repo Metadata
 - name: Git
   description: Fast, scalable, distributed revision control system
@@ -26,6 +27,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/piranna/level-SecureStore
   detection_source: Repo Metadata
 - name: npm
   description: The package manager for JavaScript.
@@ -35,6 +37,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/piranna/level-SecureStore/blob/master/package.json
   detection_source: package.json
   last_updated_by: Jesús Leganés-Combarro 'piranna
   last_updated_on: 2019-08-17 19:39:56.000000000 Z
@@ -45,6 +48,7 @@ tools:
   open_source: false
   hosted_saas: false
   image_url: https://img.stackshare.io/service/3722/lejvzrnlpb308aftn31u_normal.png
+  detection_source_url: https://github.com/piranna/level-SecureStore/blob/master/package.json
   detection_source: package.json
   last_updated_by: Jesús Leganés-Combarro 'piranna
   last_updated_on: 2019-08-17 19:39:56.000000000 Z
@@ -86,6 +90,20 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15837/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: https://github.com/piranna/level-SecureStore/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Jesús Leganés-Combarro 'piranna
+  last_updated_on: 2019-08-17 19:39:56.000000000 Z
+- name: tape
+  description: Tap-producing test harness for node and browsers
+  package_url: https://www.npmjs.com/tape
+  version: 4.11.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15856/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
   detection_source_url: https://github.com/piranna/level-SecureStore/blob/master/package.json
   detection_source: package.json
   last_updated_by: Jesús Leganés-Combarro 'piranna
