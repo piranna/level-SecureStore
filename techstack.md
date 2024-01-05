@@ -24,7 +24,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [piranna/level-SecureStore](https://github.com/piranna/level-SecureStore)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|7<br/>Tools used|12/27/23 <br/>Report generated|
+|8<br/>Tools used|01/05/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -76,15 +76,16 @@ Full tech stack [here](/techstack.md)
 </table>
 
 
-## <img src='https://img.stackshare.io/group.svg' /> Open source packages (3)</h2>
+## <img src='https://img.stackshare.io/group.svg' /> Open source packages (4)</h2>
 
-## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (3)
+## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (4)
 
 |NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
 |:------|:------|:------|:------|:------|:------|
 |[lodash.merge](https://www.npmjs.com/lodash.merge)|v4.6.2|08/17/19|Jesús Leganés-Combarro 'piranna |MIT|N/A|
 |[memdown](https://www.npmjs.com/memdown)|v5.0.0|08/18/19|Jesús Leganés-Combarro 'piranna |MIT|N/A|
 |[nyc](https://www.npmjs.com/nyc)|v14.1.1|08/17/19|Jesús Leganés-Combarro 'piranna |ISC|N/A|
+|[tape](https://www.npmjs.com/tape)|v4.11.0|08/17/19|Jesús Leganés-Combarro 'piranna |MIT|N/A|
 
 <br/>
 <div align='center'>
